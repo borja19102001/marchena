@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--título de la página -->
+<title>Marchena</title>
+<!--Conexión con la hoja de estilos y favicon -->
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+<!-- Código de las tipografías de la página -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+<link href="css/estilos-responsive.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!-- Código conectado al javascript -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="efectos-responsive.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/estilos-responsive.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="efectos-responsive.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<!-- La página se estructura en tres partes, la cabeza o head que es donde se encuntran todas las conexiones entre las diferentes páginas, la tipografía, el título de la página, etc. Seguidamente nos encontramos con este apartado, 
+	el body, es decir, todo el contenido de la página; que a su vez se va a dividir en el menú, contenido y pie. -->
+<body>
+	
+<!-- Menú principal (y único) que aparece en la parte superior de la página. Para que sea más visible el hover, se le ha cambiado el color a azul, color corporativo del pueblo de Marchena. -->
+	<div id="menu">
+
+				<div class="botones"> 
+						<div class="logo"><a href="index.html"> <img src="images/logo.png" title="Escudo Marchena" alt="Escudo Marchena" width="80%" > </a></div>
+						<header>
+							<div class="menu_bar">
+								<a href="#" class="bt-menu"><span class="fa fa-bars"></span>Marchena</a>
+							</div>
+					 
+							<nav>
+								<ul>
+									<li><a  href="index.html">Home</a></li>
+									<li><a href="gastronomia.html">Gastronomía</a></li>
+									<li><a href="monumentos.html">Monumentos</a></li>
+									<li><a href="arte.html">Arte </a></li>
+							
+								</ul>
+							</nav>
+						</header>
+				</div>
+			</div>
+
+<!-- El contenedor va a abarcar todo lo que va a ser visible en el frontend -->			
+<div id="contenedor">	
+		
+	<div id="contenido">
+<!-- Imagen principal de la cabecera (Todas están redimensionadas al tamaño correcto, para que se vean iguales en todas las páginas, optimizando el peso y en diferentes formatos utilizando la herramienta de photoshop para ello) -->		
+<picture>
+	<source src="images/marchena.svg" type="images/svg">
+	<img src="images/marchena.jpg" title="Descubre Marchena" alt="Descubre Marchena" width="100%">   
+	</picture>
+			
+
+			<br>
+			<br><br>
+			<br><br><br><br>
+<!-- Pequeñp texto de inicio -->	
+			<div class="texto-inicio">
+			<h1>Marchena</h1>
+			<p>  "Descubre la magia de Marchena: donde la historia se entrelaza con la autenticidad de un pueblo único." </p>
+			<br>
+    <!-- Botón "Saber más" -->
+    <a href="monumentos.html" class="saber-mas-btn"> Saber más</a>
+	<br>
+	
+	
+	<br></div>
+	
+
+	   <!-- columnas botones imágenes, son tres imágenes que te llevan a las diferentes secciones del menú,para que se vea de una forma más visual y el usuario encuentre la web más usable y accesible, mejorando así el UX/UI -->
+		<div class="izquierda">
+			<a href="monumentos.html" >
+				
+				 <!-- Estas imagenes no llevan la etiqueda loading lazy porque son necesarias que se visualicen y carguen rápido -->
+				<img src="images/monumentos.jpg" onmouseover="this.src = 'images/monumentos-letra.jpg'" onmouseout="this.src = 'images/monumentos.jpg'" title="Monumentos" alt="Monumentos de Marchena" width="95%"></a>
+				<p></p>
+				
+		</div>
+			
+			<div class="izquierda2">
+				<a href="arte.html" ><img src="images/flamenco.jpg" onmouseover="this.src = 'images/arte-letra.jpg'" onmouseout="this.src = 'images/flamenco.jpg'" title="El arte en Marchena" alt="El arte en Marchena" width="95%"></a>
+				<p></p>
+				
+   			</div>
+		
+		
+			
+				<div id="columna">
+			<div class="derecha">
+				<a href="gastronomia.html" ><img src="images/gastronomia-simple.jpg" onmouseover="this.src = 'images/gastronomia-letra.jpg'" onmouseout="this.src = 'images/gastronomia-simple.jpg'" title="Gastronomía en Marchena" alt="Gastronomía en Marchena" width="95%"></a>
+			
+				
+		
+				
+				
+		   </div>
+			</div>
+
+<!--Bloque de texto con un estilo asignado para que todos sigan la misma estética -->
+			<div class="textohome">
+			<h2>Monumentos que cuentan historias: El Arco de las Rosas</h2>
+			<p>En el corazón de Marchena, el Arco de las Rosas se erige majestuoso como un testigo silencioso de siglos de historia. Este monumento emblemático, con sus arcos floridos y su arquitectura impresionante, transporta a los visitantes a través del tiempo, revelando secretos que solo las piedras pueden contar. Explora sus callejones adoquinados y déjate llevar por la magia de un pasado que perdura en cada rincón.</p>
+			<br>
+			<h2>Delicias culinarias que conquistan: Molletes y Tortas de Manteca</h2>
+			<p>La gastronomía de Marchena es un festín para los sentidos, y dos de sus tesoros culinarios son los molletes y las tortas de manteca. Los molletes, pequeños panes tiernos y esponjosos, se han convertido en el desayuno predilecto de locales y visitantes. Acompáñalos con las famosas tortas de manteca, deliciosas y crujientes, para experimentar el auténtico sabor de la tradición marchenera. Un banquete que te sumergirá en la autenticidad de la cultura local.</p>
+			<br>
+			<h2>Arte que inspira: Coullaut Valera y Pepe Marchena</h2>
+			<p>Marchena ha sido cuna de grandes artistas, entre ellos el escultor Federico Coullaut Valera, cuyas obras maestras han dejado una huella imborrable en el panorama artístico. Sus esculturas, llenas de expresividad y detalle, se erigen como monumentos vivientes en honor a la creatividad y la pasión.</p>
+			<p>En el ámbito musical, Pepe Marchena, ilustre cantaor de flamenco, ha llevado el arte del cante a niveles insospechados. Nacido y criado en las entrañas de este pueblo, su legado perdura como un eco melódico que resuena en cada rincón. Descubre el alma flamenca de Marchena a través de los ecos de su voz.</p>
+		<br>
+			<p>Marchena, un pueblo que despierta los sentidos, te invita a sumergirte en sus calles impregnadas de historia, saborear sus delicias culinarias y dejarte llevar por el arte que ha florecido en sus tierras. Bienvenido a una experiencia única que combina pasado, presente y futuro en cada rincón de este tesoro andaluz.</p>
+		
+		</div>
+
+
+		
+</div>
+		<!-- Banner con fondo negro, un CTA para que contacten con nosotros-->
+		<div class="contacto">
+			
+				<img loading="lazy"   src="images/icono-llamada-96.png" title="icono llamada" alt="Icono llamada" width="5%" >
+				<br>
+				<p>Si quieres visitarnos, no dudes en hacerlo, ¡estaremos encantados de recibite! </p>
+				<br>
+			<p>En caso de tener alguna duda, ponganse en contacto con nosotros.</p>
+			<br><br>
+			<a href="monumentos.html" class="boton-contacto">Contacta con nosotros</a>
+		</div>
+
+		<div class="textohome">
+			<p>Situado en la provincia de Sevilla, en la pintoresca región de Andalucía, el pueblo de Marchena se erige como un tesoro cultural impregnado de historia, arte y tradición. Sus estrechas calles empedradas y sus plazas encantadoras transportan a los visitantes a través del tiempo, revelando la riqueza de su herencia. El <strong>Arco de las Rosas</strong>, majestuoso y lleno de encanto, se erige como un símbolo histórico que da la bienvenida a aquellos que exploran sus callejones.</p>
+
+			<p>La gastronomía marchenera deleita los paladares con sus sabores auténticos. Desde los tradicionales <strong>molletes</strong> hasta las deliciosas <strong>tortas de manteca</strong>, cada bocado cuenta una historia de las habilidades culinarias arraigadas en la comunidad local.</p>
+	
+			<p>Marchena ha sido cuna de grandes artistas, como el renombrado escultor <strong>Lorenzo Coullaut Valera</strong> y el legendario cantaor de flamenco <strong>Pepe Marchena</strong>. Sus legados perduran, y el arte impregna las calles y plazas, recordando a todos la rica contribución de este pueblo al panorama cultural español.</p>
+	
+			<p>Con su encanto único, Marchena invita a los viajeros a descubrir la autenticidad de la vida andaluza. Ya sea explorando sus monumentos, saboreando su gastronomía o sumergiéndose en su patrimonio artístico, este pueblo ofrece una experiencia inolvidable que captura el espíritu vibrante de Andalucía.</p>
+			</div>
+
+
+		<div class="video">	
+	<iframe width="1060" height="715" src="https://www.youtube.com/embed/7-JOW38370g?si=8vw4wzoipjyNzwQf" title="YouTube video sobre el pueblo de Marchena" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>	<br>
+
+
+</div>	
+
+
+<!--El pie de la página con la botonera de las redes sociales que llevan un target blank para que el usuario no se vaya de la web y pueda seguir en ella sin necesidad de tener que darle al botón atrás -->
+	<div id="pie">
+	
+   <a href="https://www.facebook.com/aytomarchena/?locale=es_ES" target="_blank"><img src="images/facebook.png" title="Facebook" alt="Facebook" width="6%"></a>
+			<a href="https://twitter.com/ayto_marchena?lang=es" target="_blank"><img src="images/twitter.png" title="Twitter" alt="Twitter" width="6%"></a>
+			<a href="https://www.instagram.com/aytomarchena/" target="_blank"><img src="images/instagram.png" alt="Instagram" width="5%"  title="Instagram"></a>
+			<h5><em>©Marchena 2024</em></h5>
+	</div>
+	
+
+	
+</body>
+</html>

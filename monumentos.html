@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Monumentos</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+	 <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link href="css/estilos-responsive.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="css/efectos-responsive.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+
+<body>
+
+ 
+
+	<div id="menu">
+			
+	
+					
+		<div class="botones"> 
+				<div class="logo"><a href="index.html"> <img src="images/logo.png" title="Escudo Marchena" alt="Escudo Marchena" width="80%" > </a></div>
+				<header>
+					<div class="menu_bar">
+						<a href="#" class="bt-menu"><span class="fa fa-bars"></span>Marchena</a>
+					</div>
+			 
+					<nav>
+						<ul>
+							<li><a  href="index.html">Home</a></li>
+							<li><a href="gastronomia.html">Gastronomía</a></li>
+							<li><a href="monumentos.html">Monumentos</a></li>
+							<li><a href="arte.html">Arte </a></li>
+					
+					
+						</ul>
+					</nav>
+				</header>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div id="contenedor">
+	<!-- Imagen principal de la cabecera  -->		
+
+		<picture>
+			<source src="images/slider-monumentos.svg" type="images/svg">
+			<img src="images/slider-monumentos.png" width="100%" alt="Vistas de Marchena" title="Monumentos de Marchena" />   
+			</picture>
+	<br>
+	
+	
+
+	
+		<div id="cuerpo">
+			<br><br>
+			<h1>Monumentos en Marchena</h1>
+			<br>		
+ 			 <p>Bienvenidos a Marchena, una joya enclavada en la provincia de Sevilla, donde cada rincón respira historia y cultura. Esta encantadora localidad presume de una <strong>gran variedad de monumentos</strong> que capturan la esencia de diferentes épocas y estilos arquitectónicos.</p>
+			  <br>
+			<!--Clase con animación de fade in -->
+			<div class="monumento fade-in">
+				<picture>
+					<source src="images/marchena_san_agustin.svg" type="images/svg">
+					<a href="https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/iglesia-de-san-agustin-en-marchena" target="_blank">
+					<img src="images/marchena_san_agustin.jpg" alt="Iglesia de San Juan Bautista" title="Iglesia de San Juan Bautista, Marchena" />
+				  </picture>
+
+				<h2>Iglesia de San Juan Bautista</h2>
+				<p>La imponente Iglesia de San Juan Bautista, con su arquitectura gótica, se alza majestuosamente en el corazón de Marchena. Los arcos apuntados y los detalles intrincados revelan la maestría de los artesanos que la construyeron.</p></a>
+			  </div>
+			
+			  <div class="monumento fade-in" style="animation-delay: 0.5s;">
+				<picture>
+					<source src="images/marchena-plaza-españa.svg" type="images/svg">
+					<a href="https://www.turismosevilla.org/es/que-ver-y-hacer/patrimonio/monumentos/iglesia-san-juan-bautista" target="_blank">
+					<img  src="images/marchena-plaza-españa.jpg" alt="Plaza de España"  title="Plaza de España, Marchena">
+				  </picture>
+				<h2>Plaza de España</h2>
+				<p>La Plaza de España, rodeada de edificios históricos, es el corazón social de Marchena. Sus encantadoras plazas y fuentes ofrecen un lugar de descanso perfecto para los visitantes y locales por igual.</p></a>
+			  </div>
+			
+
+			  <h2>Contacta con Nosotros</h2>
+			  <br>
+			  <p>Si quieres venir y disfrutar de Marchena, ver sus monumentos con un guía, visitar los hornos para probar sus famosos productos o disfrutar de un espectáculo de flamenco, ¡Rellena este formulario!</p>
+			  <br><br>
+
+<!--Código del formulario js -->
+<!--Se está indicando los campos que hay y con qué se debe rellenar -->
+  <form action="" method="" id="contactForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" >
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" >
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" ></textarea>
+
+    <button type="submit" id="enviarBtn">Enviar Mensaje</button>
+  </form>
+  <br><br>
+	
+
+		</div>
+	</div>
+	
+		
+<!--Pie de la página con la botonera de las redes sociales que llevan un target blank para que el usuario no se vaya de la web y pueda seguir en ella sin necesidad de tener que darle al botón atrás -->
+		
+<div id="pie">
+	
+    <a href="https://www.facebook.com/aytomarchena/?locale=es_ES" target="_blank"><img src="images/facebook.png" title="Facebook" alt="Facebook" width="6%"></a>
+			<a href="https://twitter.com/ayto_marchena?lang=es" target="_blank"><img src="images/twitter.png" title="Twitter" alt="Twitter" width="6%"></a>
+			<a href="https://www.instagram.com/aytomarchena/" target="_blank"><img src="images/instagram.png" alt="Instagram" width="5%"  title="Instagram"></a>
+			<h5><em>©Marchena 2024</em></h5>
+	</div>
+	
+</body>
+</html>
