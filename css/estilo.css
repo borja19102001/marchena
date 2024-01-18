@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+:root {
+	--fuente-principal: 'Montserrat', sans-serif;
+	--fuente-secundaria: 'Poppins', sans-serif;
+	--color-texto: #000; 
+	--color-texto-secundario: white;
+	--grosor-fuente-principal: 300; 
+  }
+  
+  body {
+	font-family: var(--fuente-principal);
+	color: var(--color-texto);
+	font-weight: var(--grosor-fuente-principal);
+  }
+  
+  h1 {
+	font-family: var(--fuente-secundaria);
+	color: var(--color-texto);
+	font-size: 2em; 
+	font-weight: 1000;
+  }
+  
+  h2 {
+	font-family: var(--fuente-secundaria);
+	color: var(--color-texto);
+	font-size: 1.5em; 
+	font-weight: 600;
+  }
+  
+  h5 {
+	font-family: var(--fuente-secundaria);
+	color: var(--color-texto-secundario);
+	font-size: 0.8em; 
+	font-weight: lighter;
+	line-break: 4em;
+  }
+  
+  p {
+	font-family: var(--fuente-principal);
+	font-weight: 400;
+	line-height:  1.8em;
+	font-size:1em;
+  }
+  
+  h3, h4, h6 {
+	font-family: var(--fuente-secundaria);
+	color: var(--color-texto);
+
+  }
+
+
+
+a:hover {
+	color:#0c3836;
+	text-decoration: underline;
+	font-family: "Montserrat", sans-serif;
+}
+
+a{
+	color:#5B7B70;
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+}
+
+.enlace2:hover {
+	color: var(--color-texto);
+	text-decoration: underline;
+	font-family: "Montserrat", sans-serif;
+}
+
+.enlace2{
+	color: var(--color-texto-secundario);
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+}
+
+.enlace3{
+	color:#223728;
+	font-weight: 50;
+ font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	
+}
+
+#contenedor{
+	width: 1200px;	
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+#menu{
+	
+	
+	width: 100%;
+	
+}
+
+
+.logo{
+
+	float:left;
+	width: 3.5%;
+	margin-left: 100px;
+	padding-bottom: 10px;
+	
+}
+
+
+
+
+.botones{
+	background:#000000;
+	font-family: "Montserrat", sans-serif; 
+	float:left;
+	width: 100%;
+	font-size: 15px;
+    padding-top: 30px;
+	
+}
+
+#cuerpo{
+	width: 100%;
+}
+
+
+/*Estilo de los textos, para que tengan los espacios correctos*/
+.textoprimero{
+	padding-top: 10px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+
+/*imagen y textos colocados en la pag de arte a la izquierda*/
+.imagen-izquierda{
+	width: 18%;
+	margin-right: 5%;
+	float: left;
+	margin-bottom:100px ;
+	
+}
+.texto-derecha{
+	width: 77%;
+	float: right;
+
+}
+
+
+/*imagen y textos colocados en la pag de arte a la derecha*/
+.imagen-derecha{
+	width: 18%;
+	float: right;
+	margin-top: 100px ;
+	
+}
+.texto-izquierda{
+	width: 76%;
+	float: left;
+	margin-right: 5%;
+	padding-bottom: 20px ;
+
+}
+
+/* Start: Video Responsive */
+.video {
+    overflow:hidden;
+    padding-bottom:800px;
+    position:relative;
+    height:0;
+}
+.video iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* End: Video Responsive */
+
+
+.bloque-fondo-negro{
+	padding-top:50px;
+	padding-bottom:80px;
+	background-color:black;
+	color: var(--color-texto-secundario);
+	
+
+}
+/*imagen y textos colocados en la página de gastronomía a la izquierda*/
+.imagen-izquierda-molletes{
+	width: 30%;
+	margin-right: 5%;
+	float: left;
+	margin-bottom:100px ;
+	
+}
+.texto-derecha-molletes{
+	width: 65%;
+	float: right;
+
+}
+
+#alt-right {
+	display: none;
+}
+
+
+ /* Estilos para el botón Más información */
+ .saber-mas-btn {
+	background-color: transparent;
+	border: 1px solid  rgb(0, 0, 0);
+	color: var(--color-texto);
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Cambiar el color del texto al pasar el ratón sobre el botón más información */
+	.saber-mas-btn:hover {
+		color: var(--color-texto-secundario);
+		background-color: rgb(0, 0, 0);
+	}
+
+
+.imagen.fondo{
+	background-color: rgb(0, 0, 0);
+	width: max-content;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	
+}
+
+
+/*PÁGINA MONUMENTOS*/
+
+/*Animación de texto acercándose en un bloque*/
+.monumento {
+	position: relative;
+	margin-bottom: 30px;
+	border: 2px solid #7e7e7e81;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #fff;
+	transition-delay: 0.2s;
+	transition: transform 0.3s ease-in-out;
+  }
+
+  .monumento:hover {
+	transform: scale(1.05);
+  }
+
+  .monumento img {
+	max-width: 100%;
+	border-radius: 8px;
+	margin-bottom: 10px;
+  }
+
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+
+  .fade-in {
+	animation: fadeIn 1s ease-in-out;
+  }
+
+
+/*Parámetros para hacer el formulario*/
+  form {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+	display: block;
+	margin-bottom: 8px;
+  }
+
+  input,textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+  }
+
+  button {
+	background-color: #000000;
+	color: var(--color-texto-secundario);
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+
+  .success-message {
+	color: rgb(27, 73, 59);
+	margin-top: 10px;
+  }
+
+#pie{
+	background:#000000;
+	color: var(--color-texto-secundario);
+	padding-bottom: 30px;
+	padding-top: 30px;
+	text-align:center;
+	}
+
+
+@media screen and (max-width:1920px) {
+	
+
+	#contenedor {
+		float: none;
+		width: 100%;
+	}
+	#cuerpo {
+		float: none;
+		width: 70%;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	#pie {
+		float: inline-end;
+		width: 100%;
+	}
+	table {
+		width:100%;
+	}
+	thead {
+		display: none;
+	}
+	tr:nth-of-type(2n) {
+		background-color: inherit;
+	}
+	tr td:first-child {
+		font-weight:bold;
+		font-size:1.3em;
+	}
+	tbody td {
+		display: block;
+		text-align:left;
+	}
+	tbody td:before {
+		content: attr(data-th);
+		display: block;
+		text-align:center;
+	}
+	
+
+
+}
+
+

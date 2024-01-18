@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+/* Este código está realizado para que pueda verse la página responsive, es decir, tanto en ordenador, como en móvil; 
+en cualquier dispositivo. Para ello se le ha dado unas indicaciones que cuando la página se vea a cierto tamaño, esta 
+cambie según las directrices que le hemos señalado.  */
+
+
+
+
+
+* {
+	margin:0;
+	padding:0;
+}
+ 
+body {
+	background:#FFFFFA;
+}
+ 
+header {
+	width:100%;
+}
+ /*estilos menu */
+header nav {
+	width:100%;
+	max-width:1200px;
+	background:#000000;
+	font-family: "Montserrat", sans-serif;
+}
+ 
+.menu_bar {
+	display:none;
+	font-family: "Montserrat", sans-serif;
+}
+ 
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+header nav ul li {
+	float:left;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+ 
+header nav ul li span {
+	margin-right:10px;
+	color: rgb(7, 68, 60);
+}
+ 
+header nav ul li a:hover {
+	background:#c3e0d5;
+	color: rgb(12, 47, 49);
+}
+ 
+section {
+	padding:20px;
+}
+ 
+
+
+@media screen and (max-width:800px ) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+ 
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#000000;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+
+	/* Se ha cambiado el código porque las imágenes que aparecían cuando la pantalla es más reducida no se visualizan correctamente, opr lo que se le ha dicho que no se muestren, así no tenemos una página tan extensa en móvil */
+
+
+	.imagen-derecha{
+		float: none;
+		display: none;
+
+	}
+	.texto-derecha{
+		float: none;
+		width: 100%;
+	}
+	.imagen-izquierda{
+		float: none;
+		display: none;
+
+	}
+	.texto-izquierda{
+		float: none;
+		width: 100%;
+	}
+
+	
+	/* En este caso, si queremos que aparezca la imagen pero arrib y no al lado en pequeño, ya que hay mucho texto y es necesaria la imagen para que sea una página más visual y el usuario no se vaya porque haya mucho texto */
+
+	.texto-derecha-molletes{
+		float: none;
+		width: 100%;
+	}
+	.imagen-izquierda-molletes{
+		float: none;
+		width: 100%;
+
+	}
+	.logo{
+	width: 10%;
+}
+}
